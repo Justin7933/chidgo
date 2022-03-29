@@ -16,7 +16,10 @@ const Right = styled.div`
 
 const Intro = () => {
   return ( 
-    <Container></Container>
+    <Container>
+        <Left>l</Left>
+        <Right>r</Right>
+    </Container>
   )
 };
 
