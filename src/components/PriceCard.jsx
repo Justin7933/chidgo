@@ -63,10 +63,10 @@ const PriceCard = ({ price, type }) => {
       </PriceContainer>
       <Type>{type} Plan</Type>
       <List>
-        <ListItem>200 Hand-Crafted Templates</ListItem>
+        <ListItem>1-3 pages(Including Landing Page)</ListItem>
         <ListItem>Exclusive Support</ListItem>
-        <ListItem>50+ PreBuilt Websites</ListItem>
-        <ListItem>Premium Plugins</ListItem>{" "}
+        <ListItem></ListItem>
+        <ListItem></ListItem>{" "}
       </List>
     </Container>
   );
