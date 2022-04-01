@@ -1,0 +1,8 @@
+.MenuItem{
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}

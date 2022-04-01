@@ -24,9 +24,10 @@ const Logo = styled.h1`
     text-decoration: underline crimson;
 `;
 
-const Menu = styled.ul`
+const Menu = styled.nav`
     display: flex;
     list-style: none;
+    cursor: pointer;
 
     @media only screen and (max-width: 480px) {
     display: none;
@@ -38,9 +39,8 @@ const MenuItem = styled.a`
     font-size: 20px;
     font-weight: bold;
     color: gray;
+    text-decoration: none;
 `;
-
-
 
 const Button = styled.button`
     border:2px solid white;
@@ -61,11 +61,11 @@ const Navbar = () => {
             <Left>
             <Logo>chidgo</Logo>
             <Menu>
-                <MenuItem>Home</MenuItem>
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Services</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>Contact</MenuItem>
+                <MenuItem href="#intro">Home</MenuItem>
+                <MenuItem href="feature">Features</MenuItem>
+                <MenuItem href="#service">Services</MenuItem>
+                <MenuItem href="#price">Pricing</MenuItem>
+                <MenuItem href="#contact">Contact</MenuItem>
             </Menu>
                 </Left>
         <Button>JOIN TODAY</Button>
