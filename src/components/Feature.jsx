@@ -63,6 +63,12 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: white;
+
+`;
+
 const Feature = () => {
   return (
     <Container>
@@ -75,16 +81,16 @@ const Feature = () => {
           <br />
           <b>good</b> business
         </Title>
-        <SubTitle>We know that good design means good business.</SubTitle>
+        <SubTitle>I know that good design means good business.</SubTitle>
         <Desc>
-          We help our clients succeed by creating brand identities, digital
+          I help my clients succeed by creating brand identities, digital
           experiences, and print materials that communicate clearly, achieve
           marketing goals, and look fantastic.
         </Desc>
         <Desc>
-          We care your business and guarantee you to achieve marketing goals.
+          Below you can find My Portfolio & Other Previous Work
         </Desc>
-        <Button>Learn More</Button>
+        <Button><Link href="https://hardcore-pasteur-a5cac6.netlify.app/">Learn More</Link></Button>
       </Right>
       <AnimatedShapes/>
     </Container>

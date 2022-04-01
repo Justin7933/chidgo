@@ -101,7 +101,7 @@ const Intro = () => {
             <Title>Web Designer</Title>
             <Desc>I believe that designing products and services in close partnership with my clients is the only way to have a real impact on their business.</Desc>
             <Info>
-                <Button>START A PROJECT</Button>
+                <Button>CALL TODAY</Button>
                 <Contact>
                     <Phone>Call At (781) 217-5728</Phone>
                     <ContactText>For any question or concern</ContactText>

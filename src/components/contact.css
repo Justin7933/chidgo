@@ -1,0 +1,9 @@
+.TextArea{
+    width: 200px;
+    height: 60%;
+    padding: 20px;
+    @media only screen and (max-width: 480px) {
+      padding: 5px;
+      margin-top: 20px;
+    }
+}

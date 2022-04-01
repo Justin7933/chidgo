@@ -3,6 +3,9 @@ import styled from "styled-components";
 import Map from "../img/map.png";
 import Phone from "../img/phone.png";
 import Send from "../img/send.png";
+import {useState} from 'react';
+import {send} from 'emailjs-com';
+import "./contact.css";
 
 const Container = styled.div`
   height: 90%;
@@ -75,16 +78,6 @@ const Input = styled.input`
   }
 `;
 
-const TextArea = styled.textarea`
-  width: 200px;
-  height: 60%;
-  padding: 20px;
-  @media only screen and (max-width: 480px) {
-    padding: 5px;
-    margin-top: 20px;
-  }
-`;
-
 const Button = styled.button`
   border: none;
   padding: 15px;
@@ -137,6 +130,31 @@ const Text = styled.span`
 `;
 
 const Contact = () => {
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    message: '',
+    reply_to: '',
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send(
+      'service_zqr2ng6',
+      'template_9s97zv2',
+      toSend,
+      'iiCpG0FwyGqLh2qS0'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
   return (
     <Container>
       <Wrapper>
@@ -144,15 +162,18 @@ const Contact = () => {
           <Title>
             Questions? <br /> Let's Get In Touch
           </Title>
-          <Form>
+          <Form onSubmit={onSubmit}>
             <LeftForm>
-              <Input placeholder="Your Name" />
-              <Input placeholder="Your Email" />
+              <Input name="from_name" value={toSend.from_name}
+              onChange={handleChange} placeholder="Your Name" />
+              <Input name="reply_to" value={toSend.reply_to}
+              onChange={handleChange} placeholder="Your Email" />
               <Input placeholder="Subject" />
             </LeftForm>
             <RightForm>
-              <TextArea placeholder="Your Message" />
-              <Button>Send</Button>
+              <textarea  name="message" className="TextArea" maxLength="100" value={toSend.message}
+              onChange={handleChange} placeholder="Your Message"/>
+              <Button type="submit">Send</Button>
             </RightForm>
           </Form>
         </FormContainer>

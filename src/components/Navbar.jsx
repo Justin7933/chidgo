@@ -33,12 +33,14 @@ const Menu = styled.ul`
   }
 `;
 
-const MenuItem = styled.li`
+const MenuItem = styled.a`
     margin-right: 30px;
     font-size: 20px;
     font-weight: bold;
     color: gray;
 `;
+
+
 
 const Button = styled.button`
     border:2px solid white;
@@ -48,7 +50,9 @@ const Button = styled.button`
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-`;
+`; 
+
+
 
 const Navbar = () => {
   return (
