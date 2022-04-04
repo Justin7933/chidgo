@@ -49,10 +49,13 @@ const Button = styled.button`
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    cursor: pointer;
-`; 
+`;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: white;
 
+`;
 
 const Navbar = () => {
   return (
@@ -61,14 +64,13 @@ const Navbar = () => {
             <Left>
             <Logo>chidgo</Logo>
             <Menu>
-                <MenuItem href="#intro">Home</MenuItem>
-                <MenuItem href="feature">Features</MenuItem>
-                <MenuItem href="#service">Services</MenuItem>
-                <MenuItem href="#price">Pricing</MenuItem>
-                <MenuItem href="#contact">Contact</MenuItem>
+                <MenuItem>Home</MenuItem>
+                <MenuItem>Features</MenuItem>
+                <MenuItem>Pricing</MenuItem>
+                <MenuItem>Contact</MenuItem>
             </Menu>
                 </Left>
-        <Button>JOIN TODAY</Button>
+        <Button><Link href="https://github.com/Justin7933">GitHub</Link></Button>
         </Wrapper>
     </Container>
   )

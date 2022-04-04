@@ -59,14 +59,14 @@ const PriceCard = ({ price, type }) => {
   return (
     <Container>
       <PriceContainer>
-        $<Price>{price}</Price>/month
+        $<Price>{price}</Price>
       </PriceContainer>
       <Type>{type} Plan</Type>
       <List>
         <ListItem>1-3 pages(Including Landing Page)</ListItem>
         <ListItem>Exclusive Support</ListItem>
-        <ListItem></ListItem>
-        <ListItem></ListItem>{" "}
+        <ListItem>Mobile Responsive Design</ListItem>
+        <ListItem>(Redesigns are also available)</ListItem>{" "}
       </List>
     </Container>
   );

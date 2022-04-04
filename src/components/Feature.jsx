@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Me from "../img/me.png";
 import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
@@ -18,7 +18,12 @@ const Left = styled.div`
   }
 `;
 
-
+const Image = styled.img`
+  width: 80%;
+  border-radius: 50%;
+  padding-left: 50px;
+  padding-top: 30px;
+`;
 
 const Right = styled.div`
   width: 50%;
@@ -73,7 +78,7 @@ const Feature = () => {
   return (
     <Container>
       <Left>
-        
+      <Image src={Me} />
       </Left>
       <Right>
         <Title>
