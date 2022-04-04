@@ -16,7 +16,7 @@ const Left = styled.div`
   padding-top: 250px;
   
   @media only screen and (max-width: 480px) {
-    display: none;
+    
   }
 `;
 
@@ -28,7 +28,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   @media only screen and (max-width: 480px) {
-    width: 100%;
+    
   }
 `;
 
