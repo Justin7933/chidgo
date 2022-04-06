@@ -3,6 +3,7 @@ import styled from "styled-components";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { FaTiktok } from 'react-icons/fa'
 
 const Container = styled.div`
   height: 10%;
@@ -52,7 +53,7 @@ const Footer = () => {
           <ListItem><Link href="https://www.linkedin.com/in/justin-damon-771503204/"><LinkedInIcon/></Link></ListItem>
           <ListItem><Link href="https://github.com/Justin7933"><GitHubIcon/></Link></ListItem>
           <ListItem><Link href="https://www.instagram.com/"><InstagramIcon/></Link></ListItem>
-          <ListItem><Link href="https://www.tiktok.com/@chidgoofficial">TikTok</Link></ListItem>
+          <ListItem><Link href="https://www.tiktok.com/@chidgoofficial"><FaTiktok/></Link></ListItem>
         </List>
         <Copyright>chidgo Ⓒ</Copyright>
       </Wrapper>
