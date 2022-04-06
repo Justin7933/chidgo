@@ -27,6 +27,7 @@ const FormContainer = styled.div`
   width: 50%;
   @media only screen and (max-width: 1024px) {
     width: 100%;
+    height: 100%;
   }
 `;
 
@@ -101,6 +102,7 @@ const AddressContainer = styled.div`
   align-items: center;
   @media only screen and (max-width: 1024px) {
     width: 100%;
+    height:100%;
     margin-top: 20px;
   }
 `;

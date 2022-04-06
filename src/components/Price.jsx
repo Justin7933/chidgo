@@ -17,6 +17,7 @@ const Left = styled.div`
   
   @media only screen and (max-width: 1024px) {
     width: 100%;
+    height: 100%;
   }
 `;
 
