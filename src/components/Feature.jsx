@@ -32,7 +32,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   @media only screen and (max-width: 480px) {
-    width: 100%;
+    width: 50%;
   }
 `;
 
