@@ -67,6 +67,7 @@ const RightForm = styled.div`
   justify-content: space-between;
   @media only screen and (max-width: 480px) {
     height: 50%;
+    padding-top: 10px;
   }
 `;
 

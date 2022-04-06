@@ -31,8 +31,9 @@ const Right = styled.div`
   padding-left: 100px;
   flex-direction: column;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
-    width: 50%;
+  @media only screen and (max-width: 480px){                                        
+    width: 100%;
+    padding-left: 20px;
   }
 `;
 
