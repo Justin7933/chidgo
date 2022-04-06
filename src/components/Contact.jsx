@@ -176,7 +176,7 @@ const Contact = () => {
             <RightForm>
               <textarea  name="message" className="TextArea" maxLength="100" value={toSend.message}
               onChange={handleChange} placeholder="Your Message"/>
-              <Button type="submit">Send</Button>
+              <Button>Send</Button>
             </RightForm>
           </Form>
         </FormContainer>

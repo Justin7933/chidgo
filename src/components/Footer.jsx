@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Container = styled.div`
   height: 10%;
@@ -36,15 +39,20 @@ const Copyright = styled.span`
   }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: white;
+`;
+
 const Footer = () => {
   return (
     <Container>
       <Wrapper>
         <List>
-          <ListItem>Guide</ListItem>
-          <ListItem>Support</ListItem>
-          <ListItem>API</ListItem>
-          <ListItem>Community</ListItem>
+          <ListItem><Link href="https://www.linkedin.com/in/justin-damon-771503204/"><LinkedInIcon/></Link></ListItem>
+          <ListItem><Link href="https://github.com/Justin7933"><GitHubIcon/></Link></ListItem>
+          <ListItem><Link href="https://www.instagram.com/"><InstagramIcon/></Link></ListItem>
+          <ListItem><Link href="https://www.tiktok.com/@chidgoofficial">TikTok</Link></ListItem>
         </List>
         <Copyright>chidgo Ⓒ</Copyright>
       </Wrapper>
