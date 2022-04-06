@@ -18,14 +18,14 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
 
 const FormContainer = styled.div`
   width: 50%;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     width: 100%;
   }
 `;
@@ -33,7 +33,7 @@ const FormContainer = styled.div`
 const Title = styled.h1`
   margin: 50px;
   margin-top: 0;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     margin: 20px;
   }
 `;
@@ -43,7 +43,7 @@ const Form = styled.form`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -54,7 +54,7 @@ const LeftForm = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin-right: 20px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     height: 50%;
     margin-right: 0;
   }
@@ -65,7 +65,7 @@ const RightForm = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     height: 50%;
     padding-top: 10px;
   }
@@ -74,7 +74,7 @@ const RightForm = styled.div`
 const Input = styled.input`
   width: 200px;
   padding: 20px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     padding: 5px;
   }
 `;
@@ -88,7 +88,7 @@ const Button = styled.button`
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     padding: 5px;
     font-size: 14px;
   }
@@ -99,7 +99,7 @@ const AddressContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     width: 100%;
     margin-top: 20px;
   }
@@ -109,7 +109,7 @@ const AddressItem = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     margin-bottom: 20px;
   }
 `;
@@ -117,7 +117,7 @@ const AddressItem = styled.div`
 const Icon = styled.img`
   width: 20px;
   margin-right: 20px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     width: 15px;
   }
 `;
@@ -125,7 +125,7 @@ const Icon = styled.img`
 const Text = styled.span`
   font-size: 20px;
   margin-right: 15px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     font-size: 14px;
   }
 `;

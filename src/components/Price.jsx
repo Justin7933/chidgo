@@ -6,7 +6,7 @@ import Monkey from "../img/monkey.png";
 const Container = styled.div`
   display: flex;
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -15,7 +15,7 @@ const Left = styled.div`
   width: 50%;
   padding-top: 250px;
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     width: 100%;
   }
 `;
@@ -27,7 +27,7 @@ const Right = styled.div`
   padding-top: 30px;
   flex-direction: column;
   justify-content: center;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
 `;

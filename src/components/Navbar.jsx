@@ -29,7 +29,7 @@ const Menu = styled.nav`
     list-style: none;
     cursor: pointer;
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 1024px) {
     display: none;
   }
 `;

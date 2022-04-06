@@ -5,7 +5,7 @@ import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
   display: flex;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
     padding: 30px 20px;
   }
@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   width: 50%;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -31,7 +31,7 @@ const Right = styled.div`
   padding-left: 100px;
   flex-direction: column;
   justify-content: center;
-  @media only screen and (max-width: 480px){                                        
+  @media only screen and (max-width: 1024px){                                        
     width: 100%;
     padding-left: 20px;
   }
@@ -39,7 +39,7 @@ const Right = styled.div`
 
 const Title = styled.span`
   font-size: 70px;
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 1024px) {
     font-size: 50px;
   }
 `;
